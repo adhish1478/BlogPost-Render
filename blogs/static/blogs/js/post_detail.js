@@ -34,7 +34,7 @@ if (!res.ok) {
   const data = await res.json();
   document.getElementById("postLikes").textContent = data["likes count"];
 }
-
+};
 // Function to load comments
 async function loadComments() {
   const res = await fetch(`${host}/posts/${postId}/comments/`);
