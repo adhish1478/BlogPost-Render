@@ -26,6 +26,11 @@ async function toggleLike() {
     window.location.href = "/login/";
     return;
   }
+  console.log("Like response:", res.status);
+
+if (!res.ok) {
+  const error = await res.json();
+  console.error("Like failed:", error);
   const data = await res.json();
   document.getElementById("postLikes").textContent = data["likes count"];
 }
