@@ -31,9 +31,10 @@ async function toggleLike() {
 if (!res.ok) {
   const error = await res.json();
   console.error("Like failed:", error);
+}
   const data = await res.json();
   document.getElementById("postLikes").textContent = data["likes count"];
-}
+
 };
 // Function to load comments
 async function loadComments() {
