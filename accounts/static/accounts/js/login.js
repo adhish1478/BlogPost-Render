@@ -34,7 +34,7 @@ document.getElementById('form').addEventListener('submit', async function(e) {
 });
 
 async function fetchUserInfo() {
-    const host = "http://localhost:8000/api";
+    const host = "https://blogpost-qyzf.onrender.com/api";
     const res= await fetch(`${host}/me`, {
         headers: {
             "Authorization": `Bearer ${localStorage.getItem("access")}`

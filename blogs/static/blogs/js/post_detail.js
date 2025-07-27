@@ -1,5 +1,5 @@
 const postId = document.body.dataset.postId;
-const host = "http://localhost:8000/api";
+const host = "https://blogpost-qyzf.onrender.com/api";
 
 // Function to load post details
 async function loadPostDetails() {
