@@ -186,7 +186,6 @@ likeBtn.addEventListener("click", async () => {
   checkIfUserLiked(); // Update button color
 });
 
-document.getElementById("likeBtn").addEventListener("click", toggleLike);
 document
   .getElementById("commentForm")
   .addEventListener("submit", submitComment);
